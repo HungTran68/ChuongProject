@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${garant.variable} ${geistMono.variable} antialiased bg-blue-500 flex justify-center	items-center h-screen` }
+        className={`${garant.variable} ${geistMono.variable} antialiased bg-blue-500 py-[32px]`}
       >
         {children}
       </body>

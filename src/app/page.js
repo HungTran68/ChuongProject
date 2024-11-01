@@ -9,9 +9,9 @@ import { IoLogoInstagram } from "react-icons/io";
 
 export default function Home() {
   return (
-    <div className="flex bg-white w-[1376px] h-[700px] rounded-[32px] p-[16px] align-center"  >
-      <div className="px-[64px] flex flex-col gap-8 p-8 w-[555px] h-[668px] py-[32px] ">
-        <div className="">
+    <footer className="flex mx-auto bg-white w-full max-w-screen-1376 h-auto rounded-[32px] p-[16px]">
+      <div className="flex flex-col px-[64px] py-[32px] ">
+        <div className="pb-[32px]">
           <Image
             src={logoMb}
             alt="logo mb"
@@ -20,31 +20,30 @@ export default function Home() {
           />
         </div>
         <hr />
-        <div className="text-[24] font-medium font-garant">
+        <div className="text-24px font-medium font-garant leading-[34.8px] py-[32px]">
           DANH SÁCH CHI NHÁNH
         </div>
         <hr />
-        <div className="text-[24] font-medium font-garant">
+        <div className="text-24px font-medium font-garant leading-[34.8px] py-[32px]" >
           EMAIL:MB247@MBBANK.COM.VN
         </div>
         <hr />
-        <div className="">
-          <div className="text-[24] font-medium font-garant ">
+        <div className="py-[32px]">
+          <div className="text-24px font-medium font-garant leading-[34.8px]">
             HOTLINE:1900 545426
           </div>
-          <div className="text-[24] font-medium font-garant ">
+          <div className="text-24px font-medium font-garant leading-[34.8px]">
             QUỐC TẾ:(84-24)3767 4050
           </div>
         </div>
         <hr />
-        <div className="text-[24] font-medium font-garant">
+        <div className="text-24px font-medium font-garant leading-[34.8px] py-[32px]">
           DANH SÁCH ATM
         </div>
         <hr />
-        <div className="flex gap-x-[24px]">
+        <div className="flex gap-x-[24px] py-[32px]">
           <div>
           <TiSocialLinkedinCircular className="w-[30px] h-[30px]"/>
-
           </div>
           <div>
           <IoLogoFacebook className="w-[30px] h-[30px]"/>
@@ -58,33 +57,33 @@ export default function Home() {
           </div>
         </div>
         <hr />
-        <div className="">
-          <div className="text-[10px] font-[600] text-[#00000099] font-garant">
+        <div className="pt-[32px]">
+          <div className="text-14px font-semibold text-[#00000099] font-garant leading-[20.3px] whitespace-nowrap">
             BẢN QUYỀN &copy; 2024 THUỘC VỀ NGÂN HÀNG QUÂN ĐỘI. BẢO LƯU MỌI QUYỀN.
           </div>
           <div className="flex " >
-            <div className="text-[10px] font-[600] text-[#00000099] underline mr-[21] font-garant">
+            <div className="text-14px font-semibold text-[#00000099] underline pr-[21] font-garant leading-[20.3px]">
               ĐIỀU KHOẢN SỬ DỤNG
             </div>
-            <div className="text-[10px] font-[600] text-[#00000099] underline underline mr-[21] font-garant">
+            <div className="text-14px font-semibold text-[#00000099] underline underline pr-[21] font-garant leading-[20.3px]">
               AN TOÀN BẢO MẬT
             </div>
-            <div className="text-[10px] font-[600] text-[#00000099] underline font-garant">
+            <div className="text-14px font-semibold text-[#00000099] underline font-garant leading-[20.3px]">
               KẾT NỐI VỚI CHÚNG TÔI
             </div>
           </div>
         </div>
 
       </div>
-      <div className="w-{789} h-{668}">
+      <div className="relative w-full h-auto">
         <Image
           src={logoRight}
           alt="logo text v"
-          width={789}
-          height={668}
+          layout="fill"
+          objectFit="cover"
+          className="h-full w-full"
         />
       </div>
-    </div>
-
+    </footer>
   );
 }

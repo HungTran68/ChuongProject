@@ -10,6 +10,13 @@ module.exports = {
       fontFamily:{
         'garant': ['var(--font-garant-regular)'],
       },
+      fontSize:{
+        '24px':'24px',
+        '14px':'14px',
+      },
+      maxWidth:{
+        'screen-1376':'1376px'
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
